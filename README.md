@@ -1,50 +1,153 @@
-# Welcome to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+---
 
-## Get started
+# 🌟 **Plan.Track.Finish. — Task Management App**
 
-1. Install dependencies
+A minimal, elegant, and fast task management app built with **React Native**, **Expo**, and **NativeWind (Tailwind CSS)**.
+Designed with simplicity, clarity, and productivity in mind.
 
-   ```bash
-   npm install
-   ```
+---
 
-2. Start the app
+## 🚀 **Features**
 
-   ```bash
-   npx expo start
-   ```
+* ✨ **Add tasks** with topic & description
+* 🗑️ **Swipe to delete** with confirmation
+* 📱 **Responsive UI**, works on all screen sizes
+* 🎨 **Tailwind-powered styling** via NativeWind
+* ⚡ **Smooth swipe gestures** using Gesture Handler
+* 📝 **Beautiful empty state screen**
+* 🔤 **Custom Poppins font** integration
+* 💡 Simple, clean, beginner-friendly UX
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 📸 **Screenshots**
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### 🧾 Main Screen (Tasks List)
 
-## Get a fresh project
+<p align="center">
+  <img src="./docs/img2.jpg" width="200"/>
+</p>
+<p align="center"><i>Task list with swipe-to-delete functionality.</i></p>
 
-When you're ready, run:
+---
+
+### 📭 Empty State Screen
+
+<p align="center">
+  <img src="./docs/img1.jpg" width="200"/>
+</p>
+<p align="center"><i>A clean, friendly prompt when no tasks exist.</i></p>
+
+---
+
+### 🗑️ Delete Action (Swipe)
+
+<p align="center">
+  <img src="./docs/img3.jpg" width="200"/>
+</p>
+<p align="center"><i>Swipe left to reveal the delete button.</i></p>
+
+---
+
+### ❗ Delete Confirmation Dialog
+
+<p align="center">
+  <img src="./docs/img4.jpg" width="200"/>
+</p>
+<p align="center"><i>Confirmation dialog to prevent accidental deletions.</i></p>
+
+---
+
+## 🛠 **Tech Stack**
+
+* ⚛️ **React Native** — Mobile UI framework
+* 📱 **Expo** — Development platform
+* 🟦 **TypeScript** — Strong typing
+* 🎨 **NativeWind** — Tailwind styling
+* 🖋 **Poppins Fonts** — Modern typography
+* 🤝 **Gesture Handler** — Swipe interactions
+
+---
+
+## 📥 **Installation**
+
+Clone the repository:
 
 ```bash
-npm run reset-project
+git clone https://github.com/hello-sahasraka/To-Do-App-ReactNative.git
+cd react_native_practice
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Install dependencies:
 
-## Learn more
+```bash
+npm install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+Start the Expo development server:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+npx expo start
+```
 
-## Join the community
+Run the app on:
 
-Join our community of developers creating universal apps.
+* ▶️ **Android** — press `a`
+* 🍏 **iOS** — press `i`
+* 📱 **Expo Go** — scan the QR code
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
+
+## 📁 **Project Structure**
+
+```
+react_native_practice/
+├── app/
+│   └── index.tsx          # Main screen (task list + inputs)
+├── components/
+│   └── taskCard.tsx       # Swipeable TaskCard component
+├── docs/                  # Screenshots for README
+├── global.css             # Global Tailwind settings
+└── README.md              # Project documentation
+```
+
+---
+
+## 🧑‍💻 **Usage**
+
+1. Enter a **task topic**
+2. Type a **task description**
+3. Tap **Submit**
+4. Your task appears in the **scrollable list**
+5. Swipe left → tap **Delete**
+6. Confirm deletion in the dialog
+7. Enjoy your clean, organized task list ✨
+
+---
+
+## 🧩 **Components**
+
+### 🗂 **TaskCard**
+
+Displays an individual task with:
+
+* 🔵 **Topic** (title)
+* ✏️ **Description**
+* 🗑️ **Swipe-to-delete** action
+* 🕒 **Local timestamp**
+
+---
+
+## 🔧 **State Management**
+
+Powered by React Hooks:
+
+* `useState`
+
+  * Manage tasks
+  * Store input topic & description
+  * Handle simple CRUD operations
+
+Lightweight, fast, and ideal for small to medium apps.
+
