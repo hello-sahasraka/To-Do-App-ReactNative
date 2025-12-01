@@ -76,7 +76,6 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/hello-sahasraka/To-Do-App-ReactNative.git
-cd react_native_practice
 ```
 
 Install dependencies:
